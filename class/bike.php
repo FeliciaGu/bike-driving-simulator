@@ -17,19 +17,19 @@ class Bike {
       $this->y_boundary = $y_boundary;
     }
 
-  public function get_x_bike() {
+  public function get_x_bike():Int {
     return $this->x_bike;
   }
 
-  public function get_y_bike() {
+  public function get_y_bike():Int  {
     return $this->y_bike;
   }
 
-  public function get_direction() {
+  public function get_direction():String  {
     return $this->direction;
   }
 
-  public function move(){
+  public function move():Bool{
     $new_x_bike=$this->x_bike;
     $new_y_bike=$this->y_bike;
 
@@ -63,7 +63,7 @@ class Bike {
   }
 
   //cannot exceed boundry
-  private function valid_position($new_x_bike,$new_y_bike){
+  private function valid_position($new_x_bike,$new_y_bike):Bool{
     // if new position is not within 0 and boundary
     if($new_x_bike<0 || $new_x_bike>($this->x_boundary) || $new_y_bike<0 || $new_y_bike>($this->y_boundary) ){
       return false;
@@ -73,7 +73,7 @@ class Bike {
 
   }
 
-  public function change_direction($input) {
+  public function change_direction($input):Bool{
 
     $valid_direction=array("NORTH","EAST","SOUTH","WEST");
 
@@ -93,6 +93,7 @@ class Bike {
       }
       $this->direction=$valid_direction[$right_key];
     }
+    return true;
 
   }
 
