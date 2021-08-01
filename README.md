@@ -37,6 +37,8 @@ After reporting location, the program will start from beginning asking to place 
 
 Usage
 -----------
+On command line execute:
+
 php main.php
 
 ##Example
@@ -55,6 +57,7 @@ php main.php
 
 
 Expected output
+
     (2,3),EAST
 
 
