@@ -40,12 +40,19 @@ Usage
 php main.php
 
 ##Example
+
     PLACE 1,2,EAST
+
     FORWARD
+
     TURN_LEFT
+
     FORWARD
+
     TURN_RIGHT
+
     GPS_REPORT
+
 
 Expected output
     (2,3),EAST
